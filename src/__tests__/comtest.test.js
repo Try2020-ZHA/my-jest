@@ -1,6 +1,6 @@
 import ComTest from '../component/contest';
-import {mount} from 'enzyme';
 import React from 'react';
+import {mount} from 'enzyme';
 import Enzyme from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
@@ -11,6 +11,8 @@ test('contest calls doneClick when the button is clicked',()=>{
     const doneClick=jest.fn();
     const wrapper=mount(<ComTest attr={attr} doneClick={doneClick}/>);
 
+    const p=wrapper.find('#text');
+    expect(p.text()).toBe('this is a test');
     const button=wrapper.find('.trueDone');
     button.simulate('click');
     expect(doneClick).toBeCalledWith(true);

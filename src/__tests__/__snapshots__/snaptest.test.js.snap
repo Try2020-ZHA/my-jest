@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`the contest is rendered correctly render it 1`] = `
+<div>
+  <p
+    id="text"
+  >
+    this is a test
+  </p>
+  <p>
+    next paragraph
+  </p>
+  <button
+    className="trueDone"
+    onClick={[Function]}
+  >
+    button
+  </button>
+  <button
+    className="fakeDone"
+    onClick={[Function]}
+  >
+    button
+  </button>
+</div>
+`;
